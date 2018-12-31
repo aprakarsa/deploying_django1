@@ -19,7 +19,8 @@ path = "/home/aprakarsa1/deploying_django1/modelform3/"
 if path not in sys.path:
 	sys.path.append(path)
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mywebsite.settings")
+os.environ["SECRET_KEY"] = "syla2@)%z&w4tt*+lq$t207=9)k%3z3-i5k)6ly%^$4lr!=x-m"
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mywebsite.deploy_settings")
 
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)

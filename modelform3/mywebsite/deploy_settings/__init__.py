@@ -10,4 +10,4 @@ ALLOWED_HOSTS = [
 
 SECRET_KEY = get_env_variable("SECRET_KEY")
 
-STATICFILES_STORAGE = = "whitenoise.django.GzipManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.django.GzipManifestStaticFilesStorage"
