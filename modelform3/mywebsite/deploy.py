@@ -15,7 +15,7 @@ from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 
 
-path = "/home/aprakarsa1/deploying_django1/modelform3"
+path = "/home/aprakarsa1/deploying_django1/modelform3/"
 if path not in sys.path:
 	sys.path.append(path)
 
