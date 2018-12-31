@@ -16,3 +16,8 @@ STATICFILES_STORAGE = "whitenoise.django.GzipManifestStaticFilesStorage"
 
 db_from_env = dj_database_url.config()
 DATABASES["default"].update(db_from_env)
+DATABASES = {
+	'OPTIONS': {
+        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    },
+}
