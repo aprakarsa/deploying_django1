@@ -20,6 +20,7 @@ if path not in sys.path:
 	sys.path.append(path)
 
 os.environ["SECRET_KEY"] = "syla2@)%z&w4tt*+lq$t207=9)k%3z3-i5k)6ly%^$4lr!=x-m"
+os.environ["DATABASE_URL"] = "mysql://aprakarsa1:admin123@aprakarsa1.mysql.pythonanywhere-services.com/aprakarsa1$sosmed"
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mywebsite.deploy_settings")
 
 application = get_wsgi_application()
